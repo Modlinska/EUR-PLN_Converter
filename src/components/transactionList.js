@@ -29,7 +29,7 @@ class TransactionItem extends Component {
 
         const {amount, name, value} = this.props;
         return (<>
-                <li data-id={this.props.id}> Name: {name} Value:{amount} Value in
+                <li data-id={this.props.id}> Name: {name} Value:{parseFloat(amount).toFixed(2)} Value in
                     PLN: {(parseFloat(amount) * parseFloat(value)).toFixed(2)}
                     <button onClick={this.props.handleTransactionRemove.bind(this)}>Delete</button>
                 </li>
