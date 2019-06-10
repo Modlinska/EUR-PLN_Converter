@@ -2,5 +2,5 @@
 
 To run app:
 - git clone or download
--npm i
+- npm i
 - npm start 
